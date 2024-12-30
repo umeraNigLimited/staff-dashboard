@@ -7,7 +7,6 @@ export const AttendanceContainer = styled(SharedColumnFlex)`
   box-shadow: ${({ theme }) => theme.colors.boxShadow};
   gap: 20px;
   padding: 20px;
-  flex: 1;
 `;
 
 export const AttendanceRow = styled(SharedRowFlex)`

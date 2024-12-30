@@ -12,7 +12,10 @@ export const HomeContainer = styled(SharedRowFlex)`
   }
 `;
 
-export const HomeRowFlex = styled(SharedRowFlex)``;
+export const HomeRowFlex = styled.div`
+  display: ${(props) => props.attendanceAndTasks && "flex"};
+  flex-direction: ${(props) => props.attendanceAndTasks && "row"};
+`;
 
 export const HomeColumnFlex = styled(SharedColumnFlex)`
   flex: ${(props) => (props.$columnNumber == "1" ? 2 : 1)};
