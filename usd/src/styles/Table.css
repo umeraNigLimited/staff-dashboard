@@ -1,0 +1,36 @@
+/* Table container */
+.table-container {
+  /* background-color: #333; */
+  overflow-x: auto;
+}
+
+/* Table styling */
+.styled-table {
+  /* height: 100%; */
+  height: 400px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.styled-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Add bottom border to table rows */
+.styled-table tr {
+  border-bottom: 1px solid #ccc;
+  overflow: visible;
+}
+
+/* Optional: Hover effect for rows */
+.styled-table tr:hover {
+  background-color: #f9f9f9;
+}
