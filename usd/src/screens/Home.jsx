@@ -39,17 +39,18 @@ function Home() {
     <HomeContainer className="homeTablet">
       <HomeColumnFlex $columnNumber="1">
         <HomeRowFlex attendanceAndTasks={true}>
-          {/* <Greeting /> */}
-          <AttendanceBox style={{ flex: 1 }} />
-          <div style={{ flex: 1, backgroundColor: "red" }}>
+          <AttendanceBox />
+          <div style={{ flex: 1 }}>
             <HomeColumnFlex>
               {dashboardOverview.map((item, index) => {
                 return (
                   <CardContainer1 key={index}>
                     <Span>
-                      <span>{`${item.name}:`}</span>
+                      <span>{`${item.name}`}</span>
                       <br />
-                      <span>{`${item.count}/${item.total}`}</span>
+                      <span>
+                        <strong>{`${item.count}/${item.total}`}</strong>
+                      </span>
                     </Span>
                   </CardContainer1>
                 );

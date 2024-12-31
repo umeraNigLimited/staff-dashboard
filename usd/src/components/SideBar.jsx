@@ -58,15 +58,6 @@ function SideBar() {
           );
         })}
       </SideBarSection>
-
-      <SideBarSection>
-        <StaffProfile />
-        <Buttons
-          label="Logout"
-          icon={<BsArrow90DegRight />}
-          className="logout"
-        />
-      </SideBarSection>
     </SideBarStyle>
   );
 }

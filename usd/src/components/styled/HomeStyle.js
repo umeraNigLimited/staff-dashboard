@@ -15,6 +15,7 @@ export const HomeContainer = styled(SharedRowFlex)`
 export const HomeRowFlex = styled.div`
   display: ${(props) => props.attendanceAndTasks && "flex"};
   flex-direction: ${(props) => props.attendanceAndTasks && "row"};
+  gap: 20px;
 `;
 
 export const HomeColumnFlex = styled(SharedColumnFlex)`

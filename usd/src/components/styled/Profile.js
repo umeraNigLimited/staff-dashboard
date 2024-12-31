@@ -29,6 +29,12 @@ export const Avatar = styled.img`
   }
 `;
 
+export const AvatarSpan = styled.span`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const UserInfo = styled.div`
   display: flex;
   flex-direction: column;

@@ -15,14 +15,14 @@ export const LayoutContainerColumnFlex = styled.div`
   flex-direction: column;
 `;
 export const LayoutChild = styled.div`
-  width: ${(props) => props.$child == "first" && "300px"};
+  width: ${(props) => props.$child == "first" && "250px"};
   flex: ${(props) => props.$child == "second" && "1"};
   border: ${(props) =>
     props.$child == "first"
       ? "none"
       : `2px solid ${props.theme.colors.lightGray}`};
-  border-radius: ${(props) =>
-    props.$hild == "first" ? "none" : "50px 0 0 50px"};
+  /* border-radius: ${(props) =>
+    props.$hild == "first" ? "none" : "50px 0 0 50px"}; */
   background-color: ${(props) =>
     props.$child == "first"
       ? props.theme.colors.shade

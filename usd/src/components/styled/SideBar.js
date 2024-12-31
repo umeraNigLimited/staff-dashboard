@@ -4,9 +4,8 @@ import styled from "styled-components";
 export const SideBarStyle = styled.div`
   display: flex;
   flex-direction: column;
-  /* gap: 20px; */
   padding: 25px 0;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   height: 100%;
   width: 100%;
@@ -19,7 +18,7 @@ export const SideBarSection = styled.div`
   width: 100%;
   padding: 30px 10px;
   /* background-color: red; */
-  border-bottom: ${({ theme }) => `2px solid ${theme.colors.lightGray}`};
+  /* border-bottom: ${({ theme }) => `2px solid ${theme.colors.lightGray}`}; */
 `;
 
 export const SideBarItemContainer = styled(NavLink)`
