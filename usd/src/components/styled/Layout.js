@@ -15,6 +15,7 @@ export const LayoutContainerColumnFlex = styled.div`
   flex-direction: column;
 `;
 export const LayoutChild = styled.div`
+  position: relative;
   width: ${(props) => props.$child == "first" && "250px"};
   flex: ${(props) => props.$child == "second" && "1"};
   border: ${(props) =>

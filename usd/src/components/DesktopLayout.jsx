@@ -4,6 +4,7 @@ import { Outlet } from "react-router-dom";
 import SideBar from "./SideBar";
 import { SharedFullScreenRow } from "./styled/Shared";
 import FloatingComponent from "./FloatingComponent";
+import TopNav from "./TopNav";
 
 function DesktopLayout() {
   const [isTablet, setIsTablet] = useState(
@@ -34,6 +35,7 @@ function DesktopLayout() {
         <SideBar />
       </LayoutChild>
       <LayoutChild $child="second">
+        <TopNav />
         <Outlet />
         <FloatingComponent />
       </LayoutChild>
